@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
+  <title>Контакты</title>
+</head>
+
+<body>
+  <nav class="nav navbar navbar-expand-lg navbar-dark py-4 fs-14px px-3">
+    <div class="container">
+      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <img src="../images/logo.svg" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-nav collapse navbar-collapse navbar__links w-100" id="navbarSupportedContent">
+
+        <ul class="navbar-nav navbar__links justify-content-center align-items-center gap-4 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../blog/index.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../products/index.html">Продукты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active style-link-active" aria-current="page" href="index.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex justify-content-end align-items-center gap-4">
+        <button class="button-main">Войти</button>
+        <a class="text-white" href="#">Рус.</a>
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="contacts container">
+    <div class="row row-gap-4">
+      <div class="col-12 col-md-7 text-white">
+        <h1 class="text-white mb-5">Контакты</h1>
+
+        <p class="fs-5 fw-normal mb-4">
+          <span class="fw-semibold">
+            Задайте нам любой вопрос
+          </span>
+          <br>
+          +7 701 776 24 20
+        </p>
+        <p class="fs-5 fw-normal mb-4">
+          <span class="fw-semibold">
+            Электронная почта
+          </span>
+          <br>
+          client@fonte.kz
+        </p>
+        <p class="fw-normal">
+          <span class="fs-5 fw-semibold">
+            Юридический адрес
+          </span>
+          <br>
+          050040/A15E3H4, проспект Аль-Фараби, 77/7​, 10 этаж, Алматы, Казахстан
+          <br>
+          Z05T3D0, проспект Мангилик Ел, 55/20, Офисы 345-346, Астана, Казахстан
+        </p>
+      </div>
+      <div class="col-12 col-md-5">
+        <form class="needs-validation" novalidate onsubmit="validateForm(event)">
+
+          <div class="form-floating mb-1">
+            <input type="text" class="form-control" id="name" placeholder="Ваше имя" required>
+            <label for="name">Ваше имя</label>
+            <div class="invalid-feedback">
+              Введите имя
+            </div>
+          </div>
+          <div class="form-floating mb-1">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com"
+              pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}$" required>
+            <label for="email">Адрес электронной почты</label>
+            <div class="invalid-feedback">
+              Укажите действительный email адрес
+            </div>
+          </div>
+          <div class="form-floating">
+            <input type="tel" class="form-control" id="phone" placeholder="Введите действительный номер телефона"
+              pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+            <label for="phone">Телефон</label>
+            <div class="invalid-feedback">
+              Введите действительный номер телефона
+            </div>
+          </div>
+          <button type="submit" class="button-main mt-3 mb-3">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mt-5 row-gap-4">
+      <div class="col">
+        <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/org/rop_pri_upravlenii_politsii_rayona_yesil/82937317815/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Роп при управлении полиции района Есиль</a><a
+            href="https://yandex.ru/maps/163/astana/category/police_department/184105692/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Отделение полиции в Астане</a><iframe
+            src="https://yandex.ru/map-widget/v1/-/CCUnuZVkdB" class="contacts__map" allowfullscreen
+            style="position:relative;"></iframe></div>
+        <p class="mt-2 mb-0 text-white">Астана</p>
+      </div>
+      <div class="col">
+        <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/org/biblioteka_pervogo_prezidenta_respubliki_kazakhstan_yelbasy/153131536112/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Библиотека Первого Президента Республики
+            Казахстан - Елбасы</a><a
+            href="https://yandex.ru/maps/163/astana/category/library/184105838/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Библиотека в Астане</a><iframe
+            src="https://yandex.ru/map-widget/v1/-/CCUnu6uLXD" class="contacts__map" allowfullscreen
+            style="position:relative;"></iframe></div>
+        <p class="mt-2 mb-0 text-white">Алматы</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 w-100">
+        <div class="col mb-4 p-4 p-md-3">
+          <img class="footer__logo mb-4" src="../images/logo.svg" alt="Logo">
+          <div>
+            <img class="footer__icon me-2" src="../images/footer/facebook.svg" alt="">
+            <img class="footer__icon me-2" src="../images/footer/instagram.svg" alt="">
+            <img class="footer__icon" src="../images/footer/twitter.svg" alt="">
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Главная</a></li>
+            <li class="nav-item mb-2"><a href="../blog/index.html" class="nav-link p-0 text-muted">Блог</a></li>
+            <li class="nav-item mb-2"><a href="../products/index.html" class="nav-link p-0 text-muted">Продукты</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="../products/id.product.page.html"
+                class="nav-link p-0 text-muted">Хедж-фонд</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Крипто фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Венчурный фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Сукук фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Кастом/Private</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Сотрудничество</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

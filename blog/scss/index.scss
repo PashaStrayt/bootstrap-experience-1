@@ -1,0 +1,19 @@
+body {
+  background: #1C1C1C;
+}
+
+.blog {
+  padding-block: 100px 150px;
+
+  &__image {
+    width: 100%;
+    height: 400px;
+
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+    @media (max-width: 400px) {
+      height: 230px;
+    }
+  }
+}

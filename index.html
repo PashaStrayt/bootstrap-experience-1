@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.min.css">
+  <title>Главная</title>
+</head>
+
+<body>
+  <nav class="nav navbar navbar-expand-lg navbar-dark py-4 fs-14px px-3">
+    <div class="container">
+      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <img src="images/logo.svg" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-nav collapse navbar-collapse navbar__links w-100" id="navbarSupportedContent">
+
+        <ul class="navbar-nav navbar__links justify-content-center align-items-center gap-4 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active style-link-active" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog/index.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products/index.html">Продукты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts/index.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex justify-content-end align-items-center gap-4">
+        <button class="button-main">Войти</button>
+        <a class="text-white" href="#">Рус.</a>
+      </div>
+    </div>
+
+  </nav>
+
+  <header class="header container-fluid px-0">
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="container position-relative">
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+
+        <div class="carousel-indicators slider__indicators">
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="header__item header__item--1">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="mb-4 mb-sm-5">Хедж-фонд</h1>
+                  <p class="header__description text-white mb-4 mb-sm-5">
+                    Классический выбор профессиональных инвесторов с заданными умеренными параметрами риска.
+                    Основан на инвестировании в бумаги индекса S&P 500 с диверсификацией по 11 секторам экономики.
+                  </p>
+                  <a href="./products/id.product.page.html" class="button-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="header__item header__item--2">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="mb-4 mb-sm-5">Крипто фонд*</h1>
+                  <p class="header__description text-white mb-4 mb-sm-5">
+                    Предоставляет клиентам легальные возможности для инвестирования в криптовалюту и связанные с ней
+                    продукты.
+                  </p>
+                  <button class="button-main">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="header__item header__item--3">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="mb-4 mb-sm-5">Венчурный фонд*</h1>
+                  <p class="header__description text-white mb-4 mb-sm-5">
+                    Инвестиции в компании и проекты (стартапы), в том числе в компании на этапе Pre-IPO. Подходит для
+                    инвесторов, желающих получить более высокий доход при повышенной степени риска.
+                  </p>
+                  <button class="button-main">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="header__item header__item--4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="mb-4 mb-sm-5">Сукук фонд*</h1>
+                  <p class="header__description text-white mb-4 mb-sm-5">
+                    Предлагает возможность осуществлять долгосрочные инвестиции
+                    в инструменты с
+                    фиксированной доходностью, соответствующие принципам Шариата
+                  </p>
+                  <button class="button-main">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="header__item header__item--5">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="mb-4 mb-sm-5">Кастом/Private</h1>
+                  <p class="header__description text-white mb-4 mb-sm-5">
+                    Можем учесть ваши пожелания
+                    по параметрам фонда
+                  </p>
+                  <button class="button-main">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about container">
+    <h2 class="text-white mb-4">О нас</h2>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <img class="about__image" src="images/about/1.png" alt="">
+      </div>
+      <div class="col-12 col-md-8 ps-3 ps-lg-5 pt-4 pt-md-0">
+        <p class="about__description fw-normal text-white mb-4">
+          Наша Команда успешно осуществляет деятельность на нескольких рынках инвестиций. Богатство выбора инструментов
+          этих рынков позволяет Нам успешно сохранять и преумножать капитал клиентов.
+        </p>
+        <p class="about__description fw-normal text-white mb-4">
+          Вступить в партнерство с Fonte могут как профессиональные инвестора, так и частные лица, только начинающие
+          открывать для себя новые перспективы. Наша юрисдикция - Международный финансовый центр «Астана» (МФЦА).
+          Комфортные налоговые условия и регуляторные политики обеспечивают необходимые свободы и преимущества для
+          достижения целей инвестиций.
+        </p>
+        <p class="about__description fw-normal text-white mb-4">
+          В партнерстве с Fonte Capital LTD, инвесторы имеют возможность воспользоваться не только проверенными
+          стратегиями, но и смогут совместно разработать персональные инвестиционные решения.
+        </p>
+
+        <button class="button-main d-flex gap-2 align-items-center">
+          <img src="images/about/paper.svg" alt="">
+          Лицензии
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="advantages container">
+    <h2 class="text-white mb-5">Наши ценности</h2>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-3 mb-md-5 pe-3 pe-md-5">
+        <div class="d-flex align-items-start gap-4">
+          <img style="filter: drop-shadow(0px 0px 25px #FF6600)" src="images/advantages/1.svg" alt="">
+
+          <div>
+            <p class="text-white fs-4 fw-semibold">
+              Стабильность
+            </p>
+
+            <p class="text-white fs-14px">
+              Сохранность капитала клиентов приоритетнее доходности - каждое решение взвешено, обдумано и оценено.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col mb-3 mb-md-5">
+        <div class="d-flex align-items-start gap-4">
+          <img style="filter: drop-shadow(0px 0px 25px #FF6600)" src="images/advantages/3.svg" alt="">
+
+          <div>
+            <p class="text-white fs-4 fw-semibold">
+              Команда
+            </p>
+
+            <p class="text-white fs-14px">
+              Сохранность капитала клиентов приоритетнее доходности - каждое решение взвешено, обдумано и оценено.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col mb-3 mb-md-0 pe-3 pe-md-5">
+        <div class="d-flex align-items-start gap-4">
+          <img style="filter: drop-shadow(0px 0px 25px #FF6600)" src="images/advantages/2.svg" alt="">
+
+          <div>
+            <p class="text-white fs-4 fw-semibold">
+              Устойчивость
+            </p>
+
+            <p class="text-white fs-14px">
+              Устойчивое развитие — основа нашей бизнес-модели. Начиная с поиска и оценки предоставившихся возможностей
+              для бизнеса до последовательного развития наших проектов и реаллокации капитала в новые возможности.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col mb-3 mb-md-0">
+        <div class="d-flex align-items-start gap-4">
+          <img style="filter: drop-shadow(0px 0px 25px #FF6600)" src="images/advantages/4.svg" alt="">
+
+          <div>
+            <p class="text-white fs-4 fw-semibold">
+              Репутация
+            </p>
+
+            <p class="text-white fs-14px">
+              Ответственность и этика – основа нашей деятельности. Деятельность в рамках лучших практик (Корпоративный
+              Кодекс этики и стандарты профессионального поведения) позволяет предлагать клиентам более качественные
+              инвестиционные продукты, отвечающие высоким требованиям и ожиданиям самых требовательных клиентов.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-right">
+
+  <section class="team container">
+    <h2 class="text-white mb-5">Наша команда</h2>
+
+    <p class="text-white opacity-50 mb-5">
+      Команда Fonte Capital LTD – основа успеха. Каждый сотрудник Компании – это ценный актив в рабочем процессе фонда.
+      Наша цель – создание такой рабочей атмосферы и условий, которые позволят максимально раскрыть потенциал каждого
+      сотрудника для достижения максимального результата.
+    </p>
+
+    <div class="row row-cols-2 row-cols-lg-6 row-cols-sm-3 text-white text-center" style="row-gap: 42px">
+      <div class="col">
+        <img class="team__image" src="images/team/1.png" alt="">
+        <p class="fw-bold m-0 mt-3">Ержан Мусин</p>
+        <p class="fw-medium m-0">CEO</p>
+      </div>
+      <div class="col">
+        <img class="team__image" src="images/team/2.png" alt="">
+        <p class="fw-bold m-0 mt-3">Олжас Укенов</p>
+        <p class="fw-medium m-0">CFO</p>
+      </div>
+      <div class="col">
+        <img class="team__image" src="images/team/1.png" alt="">
+        <p class="fw-bold m-0 mt-3">Ержан Мусин</p>
+        <p class="fw-medium m-0">CEO</p>
+      </div>
+      <div class="col">
+        <img class="team__image" src="images/team/2.png" alt="">
+        <p class="fw-bold m-0 mt-3">Олжас Укенов</p>
+        <p class="fw-medium m-0">CFO</p>
+      </div>
+      <div class="col">
+        <img class="team__image" src="images/team/1.png" alt="">
+        <p class="fw-bold m-0 mt-3">Ержан Мусин</p>
+        <p class="fw-medium m-0">CEO</p>
+      </div>
+      <div class="col">
+        <img class="team__image" src="images/team/2.png" alt="">
+        <p class="fw-bold m-0 mt-3">Олжас Укенов</p>
+        <p class="fw-medium m-0">CFO</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners container text-white">
+    <h2 class="mb-5">Сторонники и Партнеры</h2>
+
+    <p class="d-inline opacity-75 fs-4 me-5">SeedBox</p>
+    <p class="d-inline opacity-75 fs-4">Freedom Finance</p>
+  </section>
+
+  <hr style="width: 90%">
+
+  <section class="blog container">
+    <h2 class="text-white mb-5">Блог компании</h2>
+
+    <div class="d-flex row row-cols-1 row-cols-md-2 row-cols-lg-3 blog__record" style="row-gap: 40px" id="first-page">
+      <div class="col">
+        <img class="blog__image" src="images/blog/1.png" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Рэй Далио перестал считать наличные «мусором»
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+      <div class="col">
+        <img class="blog__image" src="images/blog/2.png" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Инвестиции в 5G – необходимое условие экономического развития
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+      <div class="col">
+        <img class="blog__image" src="images/blog/3.png" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Минфин предложил единый налоговый вычет
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+    </div>
+    <div class="d-none row row-cols-1 row-cols-md-2 row-cols-lg-3 blog__record" style="row-gap: 40px" id="second-page">
+      <div class="col">
+        <img class="blog__image" src="images/blog/4.jpg" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+      <div class="col">
+        <img class="blog__image" src="images/blog/5.jpg" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus?
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+      <div class="col">
+        <img class="blog__image" src="images/blog/6.jpg" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+    </div>
+    <div class="d-none row row-cols-1 row-cols-md-2 row-cols-lg-3 blog__record" style="row-gap: 40px" id="third-page">
+      <div class="col">
+        <img class="blog__image" src="images/blog/7.jpg" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+      <div class="col">
+        <img class="blog__image" src="images/blog/8.jpeg" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus?
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+      <div class="col">
+        <img class="blog__image" src="images/blog/9.jpg" alt="">
+
+        <p class="fs-5 text-white mt-4 mb-4" style="height: 84px">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+
+        <a class="text-orange text-decoration-none fs-14px" href="">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+      <button class="blog__page-button blog__page-button--active" onclick="applyFilter(event, 'first-page')">1</button>
+      <button class="blog__page-button" onclick="applyFilter(event, 'second-page')">2</button>
+      <button class="blog__page-button" onclick="applyFilter(event, 'third-page')">3</button>
+    </div>
+  </section>
+
+  <div class="form">
+    <div class="container">
+      <form class="rounded-4 needs-validation m-0 mt-5 d-flex flex-column align-items-center" novalidate
+        onsubmit="validateForm(event)">
+        <div class="row row-cols-1 row-cols-md-2 w-100">
+          <div class="col form__column mb-3 m-md-0">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Ваше имя" required>
+              <label for="name">Ваше имя</label>
+              <div class="invalid-feedback">
+                Введите имя
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}$" required>
+              <label for="email">Адрес электронной почты</label>
+              <div class="invalid-feedback">
+                Укажите действительный email адрес
+              </div>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" id="phone" placeholder="Введите действительный номер телефона"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+              <label for="phone">Телефон</label>
+              <div class="invalid-feedback">
+                Введите действительный номер телефона
+              </div>
+            </div>
+          </div>
+          <div class="col form__column">
+            <div class="form-floating">
+              <textarea class="form-control h-100" id="comment" placeholder="Опишите проблему"></textarea>
+              <label for="comment">Текст обращения</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="button-main mt-5 mb-3">Оставить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 w-100">
+        <div class="col mb-4 p-4 p-md-3">
+          <img class="footer__logo mb-4" src="images/logo.svg" alt="Logo">
+          <div>
+            <img class="footer__icon me-2" src="images/footer/facebook.svg" alt="">
+            <img class="footer__icon me-2" src="images/footer/instagram.svg" alt="">
+            <img class="footer__icon" src="images/footer/twitter.svg" alt="">
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Информация</li>
+            <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Главная</a></li>
+            <li class="nav-item mb-2"><a href="blog/index.html" class="nav-link p-0 text-muted">Блог</a></li>
+            <li class="nav-item mb-2"><a href="products/index.html" class="nav-link p-0 text-muted">Продукты</a></li>
+            <li class="nav-item mb-2"><a href="contacts/index.html" class="nav-link p-0 text-muted">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="products/id.product.page.html" class="nav-link p-0 text-muted">Хедж-фонд</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Крипто фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Венчурный фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Сукук фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Кастом/Private</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Контакты</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Сотрудничество</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

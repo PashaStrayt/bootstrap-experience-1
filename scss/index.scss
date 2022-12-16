@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: #141414;
+  // overflow-x: hidden;
+}
+
+// Переписываю классы Bootstrap
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.form-control {
+  color: #FFF;
+  background-color: #141414;
+  border: none;
+
+  &:focus {
+    background-color: #141414;
+    border-color: #FF6600;
+    color: #FFF;
+    box-shadow: 0 0 0 0.15rem rgba(255, 102, 0, 0.7);
+  }
+}
+
+.carousel-control {
+  &-prev {
+    align-items: flex-start;
+    width: 19px;
+    height: 30px;
+    left: 10px;
+    top: 100px;
+
+    @media (max-width: 576px) {
+      top: 120px;
+    }
+  }
+
+  &-next {
+    align-items: flex-start;
+    width: 19px;
+    height: 30px;
+    left: 50px;
+    top: 100px;
+
+    @media (max-width: 576px) {
+      top: 120px;
+    }
+  }
+}
+
+.carousel-indicators {
+  margin: 0;
+  padding: 0;
+  inset: auto;
+  top: 530px;
+
+  @media (max-width: 1400px) {
+    top: 546px;
+  }
+
+  @media (max-width: 1200px) {
+    top: 566px;
+  }
+
+  @media (max-width: 992px) {
+    top: 530px;
+  }
+
+  @media (max-width: 768px) {
+    top: 545px;
+  }
+
+  @media (max-width: 576px) {
+    top: 440px;
+  }
+
+  @media (max-width: 400px) {
+    top: 480px;
+  }
+}
+
+// Записываю свои сокращенные классы для удобства
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.gap-6 {
+  gap: 5rem!important;
+}
+
+.row-gap {
+  &-1 {
+    row-gap: 0.25rem!important;
+  }
+  &-2 {
+    row-gap: 0.5rem!important;
+  }
+  &-3 {
+    row-gap: 1rem!important;
+  }
+  &-4 {
+    row-gap: 1.5rem!important;
+  }
+  &-5 {
+    row-gap: 3rem!important;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fs {
+  &-18px {
+    font-size: 18px;
+  }
+  &-14px {
+    font-size: 14px;
+  }
+  &-12px {
+    font-size: 12px;
+  }
+  &-8px {
+    font-size: 8px;
+  }
+}
+
+.button {
+  &-main {
+    padding: 12px 34px;
+    border: 1.5px solid #FF6600;
+
+    background: rgba(255, 102, 0, 0.3);
+    color: #FFF;
+    box-shadow: 0px 0px 50px rgba(255, 102, 0, 0.3);
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+.text-orange {
+  color: #FF6600;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.mix-blend-mode-luminosity {
+  mix-blend-mode: luminosity;
+}
+
+// Стилизация тегов
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFF;
+
+  @media (max-width: 576px) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+hr {
+  position: relative;
+  width: 70%;
+  height: 3px;
+  margin: 0;
+  overflow: visible;
+  opacity: 1;
+
+  background: linear-gradient(95.87deg, rgba(0, 0, 0, 0.08) 20.24%, #FF6600 99.06%);
+  box-shadow: 0px 0px 20px rgba(255, 102, 0, 0.15);
+  border-radius: 20px;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    content: '';
+
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+
+    background: #E56C19;
+    box-shadow: 0px 0px 50px #FF6600;
+  }
+}
+
+.hr-right {
+  margin-left: 30%;
+  transform: rotate(180deg);
+}
+
+// Основные стили
+
+.nav {
+  background: #141414;
+}
+
+.header {
+  box-shadow: 0px 10px 100px rgba(255, 102, 0, 0.15);
+
+  &__item {
+    max-height: 800px;
+    height: 100%;
+
+    padding: 174px 0 137px;
+    background: no-repeat url('../images/header/1.png') center / cover;
+
+    @media (max-width: 1400px) {
+      max-height: 600px;
+    }
+
+    &--2 {
+      background-image: url('../images/header/2.png');
+    }
+
+    &--3 {
+      background-image: url('../images/header/3.png');
+    }
+
+    &--4 {
+      background-image: url('../images/header/4.png');
+    }
+
+    &--5 {
+      background-image: url('../images/header/5.png');
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.about {
+  margin-block: 80px 75px;
+
+  &__image {
+    mix-blend-mode: luminosity;
+    opacity: 0.8;
+    object-fit: cover;
+
+    width: 100%;
+    height: 400px;
+
+    @media (max-width: 1200px) {
+      height: 450px;
+    }
+
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+
+    @media (max-width: 576px) {
+      height: 150px;
+    }
+  }
+
+  &__description {
+    font-size: 17px;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.advantages {
+  margin-block: 75px 86px;
+}
+
+.team {
+  margin-block: 35px 70px;
+
+  &__image {
+    opacity: 75%;
+
+    mix-blend-mode: luminosity;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @media (max-width: 400px) {
+      width: 120px;
+    }
+  }
+}
+
+.partners {
+  margin-bottom: 163px;
+}
+
+.blog {
+  margin-block: 35px 40px;
+
+  &__image {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+  }
+
+  &__page-button {
+    font-weight: 700;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    opacity: 0.25;
+
+    background: none;
+    border: none;
+
+    &--active {
+      font-size: 24px;
+
+      color: #FF6600;
+      opacity: 1;
+
+      text-shadow: 0px 0px 40px #FF6600;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.form {
+  padding-block: 50px;
+  background: #0A0A0A;
+  color: #FFF;
+
+  font-size: 14px;
+}
+
+.footer {
+  padding-block: 65px 70px;
+  background: #141414;
+
+  &__icon {
+    width: 34px;
+  }
+}

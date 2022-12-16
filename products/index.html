@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
+  <title>Продукты</title>
+</head>
+
+<body>
+  <nav class="nav navbar navbar-expand-lg navbar-dark py-4 fs-14px px-3">
+    <div class="container">
+      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <img src="../images/logo.svg" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-nav collapse navbar-collapse navbar__links w-100" id="navbarSupportedContent">
+
+        <ul class="navbar-nav navbar__links justify-content-center align-items-center gap-4 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../blog/index.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active style-link-active" href="">Продукты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contacts/index.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex justify-content-end align-items-center gap-4">
+        <button class="button-main">Войти</button>
+        <a class="text-white" href="#">Рус.</a>
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="products container">
+    <h1 class="text-white mb-5">Продукты</h1>
+
+    <div class="products__item mb-5">
+      <p class="fs-4 mb-4">Хедж-фонд</p>
+      <p class="mb-3">
+        Классический выбор профессиональных инвесторов с заданными умеренными параметрами риска. Основан на
+        инвестировании в бумаги индекса S&P 500 с диверсификацией по 11 секторам экономики.
+      </p>
+      <a class="button-main d-inline-block text-decoration-none text-white cursor-pointer" href="id.product.page.html">Подробнее</a>
+      <img class="products__image" src="../images/header/1.png" alt="">
+      <div class="products__image-shadow"></div>
+    </div>
+    <div class="products__item products__item--2 mb-5">
+      <p class="fs-4 mb-4">Крипто фонд*</p>
+      <p class="mb-3">
+        Предоставляет клиентам легальные возможности для инвестирования в криптовалюту и связанные с ней продукты.
+      </p>
+      <a class="button-main d-inline-block text-decoration-none text-white cursor-pointer">Подробнее</a>
+      <img class="products__image" src="../images/header/2-original.png" alt="">
+      <div class="products__image-shadow products__image-shadow--2"></div>
+    </div>
+    <div class="products__item mb-5">
+      <p class="fs-4 mb-4">Венчурный фонд*</p>
+      <p class="mb-3">
+        Инвестиции в компании и проекты (стартапы), в том числе в компании на этапе Pre-IPO. Подходит для инвесторов,
+        желающих получить более высокий доход при повышенной степени риска
+      </p>
+      <a class="button-main d-inline-block text-decoration-none text-white cursor-pointer">Подробнее</a>
+      <img class="products__image" src="../images/header/3.png" alt="">
+      <div class="products__image-shadow"></div>
+    </div>
+    <div class="products__item mb-5">
+      <p class="fs-4 mb-4">Сукук фонд*</p>
+      <p class="mb-3">
+        Предлагает возможность осуществлять долгосрочные инвестиции
+        в инструменты с
+        фиксированной доходностью, соответствующие принципам Шариата
+      </p>
+      <a class="button-main d-inline-block text-decoration-none text-white cursor-pointer">Подробнее</a>
+      <img class="products__image" src="../images/header/4.png" alt="">
+      <div class="products__image-shadow"></div>
+    </div>
+    <div class="products__item">
+      <p class="fs-4 mb-4">Кастом/Private</p>
+      <p class="mb-3">
+        Можем учесть ваши пожелания
+        по параметрам фонда
+      </p>
+      <a class="button-main d-inline-block text-decoration-none text-white cursor-pointer">Подробнее</a>
+      <img class="products__image" src="../images/header/5.png" alt="">
+      <div class="products__image-shadow"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 w-100">
+        <div class="col mb-4 p-4 p-md-3">
+          <img class="footer__logo mb-4" src="../images/logo.svg" alt="Logo">
+          <div>
+            <img class="footer__icon me-2" src="../images/footer/facebook.svg" alt="">
+            <img class="footer__icon me-2" src="../images/footer/instagram.svg" alt="">
+            <img class="footer__icon" src="../images/footer/twitter.svg" alt="">
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Главная</a></li>
+            <li class="nav-item mb-2"><a href="../blog/index.html" class="nav-link p-0 text-muted">Блог</a></li>
+            <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Продукты</a></li>
+            <li class="nav-item mb-2"><a href="../contacts/index.html" class="nav-link p-0 text-muted">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="id.product.page.html" class="nav-link p-0 text-muted">Хедж-фонд</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Крипто фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Венчурный фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Сукук фонд*</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Кастом/Private</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <ul class="nav flex-column footer__column">
+            <li class="fs-4">Продукты</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Сотрудничество</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>
